@@ -22,7 +22,7 @@ export const handleRedirectUrl = async (req, res) => {
     }
     entry.visitCount.push({ timestamp: Date.now() });
     await entry.save();
-
+   console.log(entry.redirectUrl)
     return res.redirect(entry.redirectUrl);
   } catch (error) {
     return res.status(500).json({ msg: "server error" });
