@@ -78,19 +78,13 @@ The application will be available at `http://localhost:3000`
 
 ```
 ShortUrl/
-├── controllers/          # Route controllers
-├── middleware/           # Custom middleware
-├── models/              # Database models
-├── routes/              # Route definitions
-├── service/             # Business logic services
-├── views/               # EJS templates
-├── connection.js        # Database connection
-├── index.js            # Main application file
-└── package.json        # Dependencies and scripts
+├── controllers/       
+├── middleware/      
+├── models/       
+├── routes/              
+├── service/             
+├── views/               
+├── connection.js        
+├── index.js            
+└── package.json        
 ```
-
-## Security Notes
-
-- Never commit your `.env` file to version control
-- Use strong, unique secrets for JWT_SECRET and SESSION_SECRET
-- In production, use environment variables or a secure secret management system
